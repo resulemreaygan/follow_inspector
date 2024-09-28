@@ -71,6 +71,11 @@ Follow the steps below to set up the project environment using Miniconda:
         1. People who don't follow you back, along with their profile links.
         2. People who follow you but you don't follow back, along with their profile links.
 
+### TODO
+
+- [ ] Add functionality to accept JSON file paths as user input for a more interactive experience.
+- [ ] Create a standalone executable (.exe) version of the script using PyInstaller for easier distribution.
+
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
