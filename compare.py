@@ -78,6 +78,30 @@ def compare_followers_and_followings(followers: dict, followings: dict) -> None:
         print("\n")
 
 
+def find_not_following_back_to(followings: dict, followers: dict) -> None:
+    """
+    Find users who follow you but whom you don't follow back.
+
+    :param followings: A dictionary with usernames as keys and profile links as values whom you follow, type dict
+    :param followers: A dictionary with usernames as keys and profile links as values who follow you, type dict
+    :return: None
+    """
+
+    not_followed_back = {
+        user: followers[user] for user in followers if user not in followings
+    }
+
+    if not not_followed_back:
+        print("You are following back everyone who follows you!\n")
+    else:
+        print("People who follow you but you don't follow back:\n")
+
+        for user, link in not_followed_back.items():
+            print(f"{user}: {link}")
+
+        print("\n")
+
+
 def main() -> None:
     """
     Main function to execute the script. Loads the configuration,
@@ -100,6 +124,7 @@ def main() -> None:
     followings = extract_usernames(data=followings_data.get("relationships_following"))
 
     compare_followers_and_followings(followers=followers, followings=followings)
+    find_not_following_back_to(followings=followings, followers=followers)
 
 
 if __name__ == "__main__":
