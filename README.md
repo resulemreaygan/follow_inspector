@@ -45,7 +45,7 @@ Follow the steps below to set up the project environment using Miniconda:
 
 5. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourremreaygan/FollowInspector.git
+   git clone https://github.com/remreaygan/FollowInspector.git
    cd FollowInspector
    ```
 
@@ -127,7 +127,7 @@ Projeyi Miniconda kullanarak kurmak için aşağıdaki adımları izleyin:
 
 5. **Depoyu Klonlayın**:
    ```bash
-   git clone https://github.com/yourremreaygan/FollowInspector.git
+   git clone https://github.com/remreaygan/FollowInspector.git
    cd FollowInspector
    ```
 
@@ -153,6 +153,11 @@ Projeyi Miniconda kullanarak kurmak için aşağıdaki adımları izleyin:
     - İki liste görüntülenecektir:
         1. Sizi geri takip etmeyen kişilerin listesi ve profil bağlantıları.
         2. Sizi takip eden ama sizin geri takip etmediğiniz kişilerin listesi ve profil bağlantıları.
+
+### Yapılacaklar
+
+- [ ] Daha kullanışlı olması için JSON dosya yollarını kullanıcı girişi olarak kabul edecek işlevsellik ekle.
+- [ ] Daha kolay kullanım için PyInstaller'ı kullanarak scriptin bağımsız bir yürütülebilir (.exe) sürümünü oluştur.
 
 ### Lisans
 
